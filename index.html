@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Mapbox Export - Styles, Search & Native Markers</title>
+    
+    <!-- Mapbox Libraries -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.25.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.25.0/mapbox-gl.js"></script>
+    
+    <!-- Mapbox Geocoder Plugin -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.1.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.1.0/mapbox-gl-geocoder.css" type="text/css">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="controls">
+        <label for="map-style">Select Map Style:</label>
+        <select id="map-style" class="style-select">
+            <option value="mapbox://styles/creative-vrtnws/cme2q6ufy000601sf4lr5hr7d">Style 1 (Detail - Finaal)</option>
+            <option value="mapbox://styles/creative-vrtnws/cmhepioh7006w01s6dxf12pp7">Style 2 (New Style)</option>
+        </select>
+    </div>
+
+    <div class="map-container" id="capture-area">
+        <div id="map"></div>
+    </div>
+
+    <button class="export-btn" id="export-png">Export Map as 1080x1080 PNG</button>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
